@@ -25,11 +25,13 @@ This package uses the power of OpenAI's GPT-4o-mini model to understand your cod
 You can also use the local model for free with Ollama.
 
 1. Install AI-Commit using `npm install -g ai-commit`
+   a) Until npm right issues resolved use `npm install -g https://github.com/insulineru/ai-commit`
 2. Install Ollama from https://ollama.ai/
 3. Run `ollama run mistral` to fetch model for the first time
 4. Set `PROVIDER` in your environment to `ollama`
 1. Make your code changes and stage them with `git add .`
 2. Type `ai-commit` in your terminal
+   a). Until getting #34, use `ai-commit --PROVIDER=ollama --MODEL=mistral`  
 3. AI-Commit will analyze your changes and generate a commit message
 4. Approve the commit message and AI-Commit will create the commit for you ✅
 
